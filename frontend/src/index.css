@@ -1,0 +1,392 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.appHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    padding: 0.2rem;
+    background-color: rgb(0, 0, 139);
+    color: white;
+    position: fixed;
+    width: 100vw;
+}
+
+.appHeader a {
+    color: white;
+    text-decoration: none;
+}
+
+.appHamburger button {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-right: 1rem;
+    border: none;
+    background: none;
+    color: white;
+}
+
+.appHamburger button:hover{
+    color : orange;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.title a:hover{
+    color : orange
+}
+
+
+.signInLink button:hover{
+    border: 3px solid orange;
+}
+
+.signInLink a {
+    cursor:default;
+}
+
+.cart_signin {
+    font-weight: bolder;
+    padding-right: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartLink {
+    margin-right: 0.5rem;
+}
+
+.cartLink a:hover{
+color : orange;
+}
+
+.sideBar {
+    background-color: blanchedalmond;
+    position: fixed;
+    top: 0;
+    width: 14rem;
+    padding: 1rem;
+    height: 100vh;
+    transition: all 0.5s;
+}
+
+.sideBarTitle {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid black;
+}
+
+.sideBarCategory {
+    padding-top: 0.5rem;
+}
+
+.sideBarGone {
+    background-color: blanchedalmond;
+    position: fixed;
+    top: 0;
+    width: 14rem;
+    padding: 1rem;
+    height: 100vh;
+    transform: translate(-30rem);
+    transition: all 0.5s;
+}
+
+.appBody {
+    margin-top: 3rem;
+}
+
+.itemGallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.itemBox {
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    flex: 0 0 30%;
+}
+
+.itemImageBox img {
+    width: 18rem;
+    height: 33vh;
+}
+
+.appFooter {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    width: 100vw;
+    background-color: rgb(0, 0, 139);
+    color: white;
+}
+
+/* SelectedProduct Screen */
+
+.selectedProductBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+
+.selectedImage img {
+    width: 20rem;
+    height: 70vh;
+    margin-bottom: 1rem;
+}
+
+.selectToCartDetails {
+    border: 0.1rem solid lightgray;
+    height: fit-content;
+    width: 22rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.selectToCartDetails div {
+    margin-top: 0.5rem;
+}
+
+.selectToCartDetails button {
+    margin-top: 0.5rem;
+    background-color: #ffa500;
+    color: blue;
+    border-radius: 0.1rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.selectToCartDetails button:hover {
+    border: 0.1rem solid navy;
+}
+
+.selectedDetails {
+    height: fit-content;
+    width: 15rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.selectedDetails div {
+    margin-top: 0.5rem;
+}
+
+/* CartScreen */
+.cartBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartDetails {
+    width: 75vw;
+}
+.shoppingCartHeaderTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 0.15rem solid black;
+    padding-bottom: 0;
+   
+}
+
+.shoppingCartHeaderDetails {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}
+
+.shoppingCartHeaderDetails img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.cartItemBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartItemBox img {
+    margin-right: 1rem;
+}
+
+.cartSubtotalBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 23vw;
+    flex-wrap: wrap;
+    background-color: #d3d3d3;
+    margin: 1vw;
+    height: fit-content;
+    border-radius: 0.2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 5rem;
+}
+
+.cartSubtotalBox button {
+    width: 21vw;
+    padding: 0.5rem;
+    color: blue;
+    background-color: #ffa500;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+}
+
+.cartSubtotalBox div {
+    font-weight: bolder;
+    font-size: small;
+}
+
+.cartTitle {
+    font-weight: 700;
+    font-size: large;
+}
+
+.cartQuantity button {
+    background-color: white;
+}
+
+/* sign in screen */
+
+.signInDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.2rem;
+    padding: 2rem;
+}
+
+.signInDiv form {
+    border: 0.1rem solid lightgray;
+    padding: 2rem;
+    width: 18rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.inputDiv {
+    margin-bottom: 1rem;
+}
+
+.inputDiv input {
+    width: 100%;
+    height: 1.7rem;
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+}
+
+.inputDiv input:focus {
+    background-color: #e5e7ee;
+}
+
+.signInBtn {
+    width: 102%;
+    background-color: #ffa500;
+    color: black;
+    padding: 0.2rem;
+    font-size: medium;
+    border-radius: 0.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.createAccBtn {
+    width: 102%;
+    padding: 0.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: medium;
+    border-radius: 0.2rem;
+    border: 0.1rem solid black;
+    text-align: center;
+}
+
+.signInHeader {
+    padding-bottom: 1rem;
+}
+
+/* payment screen */
+.checkBoxDiv {
+    margin-bottom: 1rem !important;
+}
+
+/* place order screen */
+
+.placeOrderBox div {
+    margin-bottom: 0.5rem;
+}
+
+.placeOrderBox button {
+    background-color: rgb(255, 165, 0);
+    padding: 0.4rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+/* create product */
+.createProductTable {
+    width: 100%;
+    padding: 0.5rem;
+    margin : 1rem;
+    margin-bottom: 5rem;
+    border : 0.1rem black solid;
+}
+
+.createProductTable th {
+    text-align: start;
+}
+
+.createProductTable tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.createProduct button {
+    margin-left: 1rem;
+}
+
+.createTableTitle {
+    margin-left: 1rem;
+    padding-top: 1rem;
+    font-weight: bolder;
+}
+
+/* step component */
+.stepStrip {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.stepStrip div{
+    /* border-top: 0.5rem solid #ffa500; */
+    color : #ffa500;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
