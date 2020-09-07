@@ -13,7 +13,7 @@ function SideBar(props) {
     const dispatch = useDispatch();
     const products = useSelector((state) => state.products);
   
-
+//
     return (
         <div ref={props.sideBarRef} className={props.sideBarClass}>
             <div className="sideBarTitle">
