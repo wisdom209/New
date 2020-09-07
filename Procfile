@@ -1,1 +1,1 @@
-web: node ./backend/server.js
+web: node -r esm ./backend/server.js
